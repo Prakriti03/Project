@@ -30,6 +30,9 @@ private slots:
 
 
 
+
+    void on_pushButton_14_clicked();
+
 private:
     Ui::homepage *ui;
 };

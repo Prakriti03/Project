@@ -18,9 +18,7 @@ Apparels_and_Accessories::Apparels_and_Accessories(QWidget *parent) :
     ui->label->setText(inFile.readAll());
     inFile.close();
     //ui->scrollAreaWidgetContents->setLayout(lay);
-
 }
-
 Apparels_and_Accessories::~Apparels_and_Accessories()
 {
     delete ui;

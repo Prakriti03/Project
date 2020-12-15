@@ -2,6 +2,7 @@
 #define SELLPRODUCT_H
 
 #include <QDialog>
+#include "delete_product.h"
 
 namespace Ui {
 class sellproduct;
@@ -10,9 +11,17 @@ class sellproduct;
 class sellproduct : public QDialog
 {
     Q_OBJECT
+    int i;
+    QString p_username;
+    QString p_price; //int
+    QString p_name;
+    QString nego;
+    QString usage;
+    QString p_description;
 
 public:
     explicit sellproduct(QString,QWidget *parent = nullptr);
+    sellproduct();
     ~sellproduct();
 
 private slots:
@@ -20,6 +29,6 @@ private slots:
 
 private:
     Ui::sellproduct *ui;
+    friend delete_product;
 };
-
 #endif // SELLPRODUCT_H

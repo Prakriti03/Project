@@ -1,31 +1,58 @@
+Code no.:1
 Product Details:-
-Name of product:kala chasma
-Description:kala kala kala kala
-Price:3000
-Non-negotiable
-Used
-Seller's Details:-
-Username:panduram
-Email:irjw
-Phone no.:09
-
-Product Details:-
-Name of product:kodskoa
-Description:kokgspgksp
-Price:323
+Name of product:asokdoadk
+Description:jdsijsp
+Price:9897
 Negotiable
+Unused
+Seller's Details:-
+Username:lol
+Email:pooe
+Phone no.:989
+
+Code no.:3
+Product Details:-
+Name of product:skosk
+Description:ojso
+Price:213
+Non-negotiable
 Used
 Seller's Details:-
 Username:lol
 Email:pooe
 Phone no.:989
 
+Code no.:4
 Product Details:-
-Name of product:ojsoqo
-Description:mdeoeoe ewoeo
-Price:2324
+Name of product:noiio
+Description:mokok
+Price:
 Non-negotiable
-Used
+Unused
+Seller's Details:-
+Username:lol
+Email:pooe
+Phone no.:989
+
+Code no.:5
+Product Details:-
+Name of product:mooo
+Description:koko
+Price:
+Non-negotiable
+Unused
+Seller's Details:-
+Username:lol
+Email:pooe
+Phone no.:989
+
+Code no.:6
+Product Details:-
+Name of product:ddsfsf
+Description:dfdf
+Price:
+Non-negotiable
+Unused
 Seller's Details:-
 Username:lol
 Email:pooe

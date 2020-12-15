@@ -1,8 +1,9 @@
+Code no.:2
 Product Details:-
-Name of product:dsjojo
-Description:jowje
+Name of product:asjdsoa
+Description:msaokj
 Price:232
-Non-negotiable
+Negotiable
 Used
 Seller's Details:-
 Username:lol

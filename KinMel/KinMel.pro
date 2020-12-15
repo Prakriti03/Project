@@ -9,12 +9,13 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    MainWindow.cpp \
     apparels_and_accessories.cpp \
     automobiles.cpp \
     beauty_and_health.cpp \
+    delete_product.cpp \
     homepage.cpp \
     main.cpp \
-    mainwindow.cpp \
     sellproduct.cpp \
     signuppage.cpp
 
@@ -22,8 +23,10 @@ HEADERS += \
     apparels_and_accessories.h \
     automobiles.h \
     beauty_and_health.h \
+    delete_product.h \
     homepage.h \
     mainwindow.h \
+    product.h \
     sellproduct.h \
     signuppage.h
 
@@ -31,6 +34,7 @@ FORMS += \
     apparels_and_accessories.ui \
     automobiles.ui \
     beauty_and_health.ui \
+    delete_product.ui \
     homepage.ui \
     mainwindow.ui \
     sellproduct.ui \

@@ -1,12 +1,12 @@
-Code no.:2
+Code no.:4
 Product Details:-
-Name of product:asjdsoa
-Description:msaokj
-Price:232
+Name of product:BMW 
+Description:bike
+Price:6,00,000
 Negotiable
 Used
 Seller's Details:-
-Username:lol
-Email:pooe
-Phone no.:989
+Username:prakriti
+Email:076bei024.prakriti@pcampus.edu.np
+Phone no.:9849663535
 

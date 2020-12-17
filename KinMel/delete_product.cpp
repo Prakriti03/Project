@@ -3,6 +3,8 @@
 #include <QFile>
 #include "sellproduct.h"
 #include <QPointer>
+#include <QTextStream>
+#include <QMessageBox>
 
 delete_product::delete_product(QWidget *parent) :
     QDialog(parent),
@@ -21,65 +23,48 @@ delete_product::delete_product(QWidget *parent) :
     ui->comboBox->addItem("Pets & Pet Care");
     ui->comboBox->addItem("Sports and Fitness");
     ui->comboBox->addItem("Toys and Video Games");
-
 }
-
 delete_product::~delete_product()
 {
     delete ui;
 }
-
 void delete_product::on_pushButton_clicked()
 {
-    /*QString code=ui->lineEdit->text();
+    QString code=ui->lineEdit->text();
     QString category=ui->comboBox->currentText();
     QFile inFile("C:/Users/user/Documents/KinMel/product_database/"+category+".txt");
+    int k=0;
+    QString a[400];
     if(inFile.open(QFile::ReadOnly | QFile::Text))
     {
-
-
-    int k,j;
-    k=0;
-
-    //inFile.seekg(0,ios::beg);
-    //while(inFile.read((char *)&prod[k],sizeof(prod[k])))
-    //{
-    //++k;
-    //}
-    while (!inFile.atEnd())
-    {
-       QString line = inFile.readLine();
-       if(line==NULL)
-        k++;
-    }
-    j=k;
-    inFile.close();
-    if(inFile.open(QFile::WriteOnly | QFile::Text))
-    {
-        for(k=0;k<j;k++)
+        while(!inFile.atEnd())
         {
-            if(code==prod.i)
-    {
-    inFile.write((char *)&prod,sizeof(prod));
+            QString line = inFile.readLine();
+            a[k]=line;
+            k=k+1;
+        }
     }
-    }
-
-    //cout<<"Record Deleted!!!"<<endl;
     inFile.close();
-    //break;
-    Aa
-            QFile inputFile(fileName);
-            if (inputFile.open(QIODevice::ReadOnly))
+    QFile outFile("C:/Users/user/Documents/KinMel/product_database/"+category+".txt");
+    if(outFile.open(QFile::WriteOnly | QFile ::Text))
+    {
+        int j=0;
+        while(j<k) //  for code number line
+        {
+            if(a[j]!="Code no.:"+code+'\n')
             {
-               QTextStream in(&inputFile);
-               while (!in.atEnd())
-               {
-                  QString line = in.readLine();
-                  ...
-               }
-               inputFile.close();
-            }*/
-
+                for(int i=j;i<j+12;i++)
+                {
+                    QTextStream out(&outFile);
+                    out<<a[i];
+                }
+            }
+            j=j+12;
+        }
+    }
+    outFile.flush();
+    outFile.close();
+    hide();
 }
 
 

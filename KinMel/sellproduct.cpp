@@ -23,8 +23,6 @@ sellproduct::sellproduct(QString actual_un,QWidget *parent) :
     ui->comboBox->addItem("Sports and Fitness");
     ui->comboBox->addItem("Toys and Video Games");
     ui->label_8->setText(actual_un);
-    //p_us
-
 }
 sellproduct::~sellproduct()
 {
@@ -49,42 +47,41 @@ void sellproduct::on_pushButton_clicked()
         QMessageBox::warning(this,"Message","Fill in the * blanks");
     else
     {
-    QFile inFile("C:/Users/user/Documents/KinMel/user_database/"+p_username+".txt");
-    if(inFile.open(QFile::ReadOnly | QFile::Text))
-    {
-        QTextStream in(&inFile);
-        QString un,pw,email,num ;
-        in>>un>>pw>>email>>num;
-        inFile.close();
-        QFile cin_File("C:/Users/user/Documents/KinMel/product_database/counter.txt");
-        if(cin_File.open(QFile::ReadOnly | QFile::Text))
+        QFile inFile("C:/Users/user/Documents/KinMel/user_database/"+p_username+".txt");
+        if(inFile.open(QFile::ReadOnly | QFile::Text))
         {
-            QTextStream in(&cin_File);
-
-            in>>i;
-            QFile outFile("C:/Users/user/Documents/KinMel/product_database/"+p_category+".txt");
-            if(outFile.open(QFile::WriteOnly | QFile::Append))
+            QTextStream in(&inFile);
+            QString un,pw,email,num;
+            in>>un>>pw>>email>>num;
+            QFile cin_File("C:/Users/user/Documents/KinMel/product_database/counter.txt");
+            if(cin_File.open(QFile::ReadOnly | QFile::Text))
             {
-                QTextStream out(&outFile);
-                out<<"Code no.:"<<i<<'\n'<<"Product Details:-"<<'\n'<<"Name of product:"<<p_name<<'\n'
-                <<"Description:"<<p_description<<'\n'<<"Price:"<<p_price<<'\n'
-                <<nego<<'\n'<<usage<<'\n';
-                out<<"Seller's Details:-"<<'\n'<<"Username:"<<p_username<<'\n'<<
-                "Email:"<<email<<'\n'<<"Phone no.:"<<num<<'\n'<<'\n';
+                QTextStream in(&cin_File);
+                in>>i;
+                QFile outFile("C:/Users/user/Documents/KinMel/product_database/"+p_category+".txt");
+                if(outFile.open(QFile::WriteOnly | QFile::Append))
+                {
+                    QTextStream out(&outFile);
+                    out<<"Code no.:"<<i<<'\n'<<"Product Details:-"<<'\n'<<"Name of product:"<<p_name<<'\n'
+                    <<"Description:"<<p_description<<'\n'<<"Price:"<<p_price<<'\n'
+                    <<nego<<'\n'<<usage<<'\n';
+                    out<<"Seller's Details:-"<<'\n'<<"Username:"<<p_username<<'\n'<<
+                    "Email:"<<email<<'\n'<<"Phone no.:"<<num<<'\n'<<'\n';
+                }
+                outFile.flush();
+                outFile.close();
             }
-            outFile.flush();
-            outFile.close();
-        }
-        cin_File.close();
-        QFile cout_File("C:/Users/user/Documents/KinMel/product_database/counter.txt");
-        if(cout_File.open(QFile::WriteOnly | QFile::Text))
-        {
-            QTextStream out(&cout_File);
-            out<<i+1;
-        }
-        cout_File.flush();
-        cout_File.close();
+            cin_File.close();
+            QFile cout_File("C:/Users/user/Documents/KinMel/product_database/counter.txt");
+            if(cout_File.open(QFile::WriteOnly | QFile::Text))
+            {
+                QTextStream out(&cout_File);
+                out<<i+1;
+            }
+            cout_File.flush();
+            cout_File.close();
    }
+   inFile.close();
    QString s = QString::number(i);
    QMessageBox::information(this,"Message","Form submission successful.Your product code is "+s);
    hide();

@@ -23,7 +23,7 @@ void signuppage::on_pushButton_clicked()
     QString un=ui->lineEdit->text();
     QString pw=ui->lineEdit_2->text();
     QString email=ui->lineEdit_3->text();
-    int number=ui->lineEdit_4->text().toInt();
+    QString number=ui->lineEdit_4->text();
     //to check if any info is missing
     if(un==NULL || pw==NULL || email==NULL)
         QMessageBox::warning(this,"Message","Incomplete information!");
@@ -43,10 +43,9 @@ void signuppage::on_pushButton_clicked()
             {
                 QTextStream out(&outFile);
                 out << un <<'\n'<< pw<<'\n'<<email<<'\n'<<number;
-                QMessageBox::information(this,"Mess","Sign up successful.");
+                QMessageBox::information(this,"Message","Sign up successful.");
                 hide();
                 homepage home(un);
-                home.setModal(true);  //opening this dialogue doesnt let use previous dialogue
                 home.exec();
                 outFile.flush();
                 outFile.close();

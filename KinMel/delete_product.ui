@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>140</y>
+     <x>10</x>
+     <y>210</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -91,9 +91,9 @@
   <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>220</y>
-     <width>69</width>
+     <x>10</x>
+     <y>150</y>
+     <width>211</width>
      <height>22</height>
     </rect>
    </property>

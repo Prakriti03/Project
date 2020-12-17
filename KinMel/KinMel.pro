@@ -26,7 +26,6 @@ HEADERS += \
     delete_product.h \
     homepage.h \
     mainwindow.h \
-    product.h \
     sellproduct.h \
     signuppage.h
 

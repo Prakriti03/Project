@@ -1,6 +1,5 @@
 #ifndef APPARELS_AND_ACCESSORIES_H
 #define APPARELS_AND_ACCESSORIES_H
-
 #include <QDialog>
 
 namespace Ui {

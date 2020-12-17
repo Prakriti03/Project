@@ -31,4 +31,5 @@ private:
     Ui::sellproduct *ui;
     friend delete_product;
 };
+//sellproduct prod;
 #endif // SELLPRODUCT_H

@@ -25,39 +25,32 @@ void homepage::on_Form_clicked()
 {
     QString un=ui->label_3->text();
     sellproduct sell(un);
-    sell.setModal(true);
     sell.exec();
 }
 void homepage::on_pushButton_2_clicked()
 {
        Apparels_and_Accessories cat;
-       cat.setModal(true);
        cat.exec();
 }
 void homepage::on_pushButton_3_clicked()
 {
     Automobiles cat;
-    cat.setModal(true);
     cat.exec();
 }
 void homepage::on_pushButton_4_clicked()
 {
     Beauty_and_Health cat;
-    cat.setModal(true);
     cat.exec();
 }
-
-
-/*void homepage::on_pushButton_clicked()
-{
-
-}*/
-
 void homepage::on_pushButton_14_clicked()
 {
    hide();
    MainWindow *log;
    log = new MainWindow;
    log->show();
-
+}
+void homepage::on_pushButton_clicked()
+{
+    delete_product dele;
+    dele.exec();
 }

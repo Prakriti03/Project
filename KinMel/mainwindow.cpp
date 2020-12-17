@@ -47,7 +47,6 @@ void MainWindow::on_pushButton_clicked()    //login
             {
                 hide();
                 homepage home(un);
-                //home.setModal(true); //opening this dialogue doesnt let use previous dialogue
                 home.exec();
             }
             else
@@ -62,7 +61,6 @@ void MainWindow::on_pushButton_2_clicked()  //open signup page
 {
     hide();
     signuppage sign_up;
-    //sign_up.setModal(true);
     sign_up.exec();
 }
 

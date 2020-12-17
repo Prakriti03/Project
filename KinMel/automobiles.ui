@@ -19,10 +19,10 @@
   <widget class="QScrollArea" name="scrollArea">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>447</width>
-     <height>415</height>
+     <x>10</x>
+     <y>10</y>
+     <width>467</width>
+     <height>435</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -36,15 +36,15 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>445</width>
-      <height>413</height>
+      <width>465</width>
+      <height>433</height>
      </rect>
     </property>
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>0</y>
+       <x>10</x>
+       <y>10</y>
        <width>441</width>
        <height>411</height>
       </rect>

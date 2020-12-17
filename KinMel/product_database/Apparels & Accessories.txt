@@ -1,60 +1,48 @@
 Code no.:1
 Product Details:-
-Name of product:asokdoadk
-Description:jdsijsp
-Price:9897
+Name of product:Sunglasses
+Description:very shady
+Price:4000
 Negotiable
 Unused
 Seller's Details:-
-Username:lol
-Email:pooe
-Phone no.:989
+Username:prakriti
+Email:076bei024.prakriti@pcampus.edu.np
+Phone no.:9849663535
+
+Code no.:2
+Product Details:-
+Name of product:Watch
+Description:very stylish
+Price:6000
+Non-negotiable
+Unused
+Seller's Details:-
+Username:prakriti
+Email:076bei024.prakriti@pcampus.edu.np
+Phone no.:9849663535
 
 Code no.:3
 Product Details:-
-Name of product:skosk
-Description:ojso
-Price:213
+Name of product:Earrings
+Description:round
+Price:200
 Non-negotiable
 Used
 Seller's Details:-
-Username:lol
-Email:pooe
-Phone no.:989
-
-Code no.:4
-Product Details:-
-Name of product:noiio
-Description:mokok
-Price:
-Non-negotiable
-Unused
-Seller's Details:-
-Username:lol
-Email:pooe
-Phone no.:989
+Username:prakriti
+Email:076bei024.prakriti@pcampus.edu.np
+Phone no.:9849663535
 
 Code no.:5
 Product Details:-
-Name of product:mooo
-Description:koko
-Price:
-Non-negotiable
-Unused
+Name of product:Handbag
+Description:Brown colored
+Price:2000
+Negotiable
+Used
 Seller's Details:-
-Username:lol
-Email:pooe
-Phone no.:989
-
-Code no.:6
-Product Details:-
-Name of product:ddsfsf
-Description:dfdf
-Price:
-Non-negotiable
-Unused
-Seller's Details:-
-Username:lol
-Email:pooe
-Phone no.:989
+Username:prakriti
+Email:076bei024.prakriti@pcampus.edu.np
+Phone no.:9849663535
 
